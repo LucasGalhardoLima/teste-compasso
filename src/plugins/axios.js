@@ -6,7 +6,7 @@ import axios from "axios";
 // Full config:  https://github.com/axios/axios#request-config
 // axios.defaults.baseURL = process.env.baseURL || process.env.apiUrl || '';
 axios.defaults.headers.common["Authorization"] =
-  "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";
+  "token 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";
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 let config = {

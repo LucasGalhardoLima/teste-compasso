@@ -2,7 +2,11 @@
   <div id="app">
     <nav class="navbar">
       <div class="nav-wrapper navbar__container">
-        <a href="#" class="brand-logo navbar__logo">Busca Github</a>
+        <a href="#" class="brand-logo navbar__logo">{{
+          $route.params.user
+            ? `Detalhes do usuário ${$route.params.user}`
+            : "Busca Github"
+        }}</a>
       </div>
     </nav>
     <router-view />
